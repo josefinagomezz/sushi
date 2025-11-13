@@ -66,7 +66,7 @@ elif menu == "Calculadora":
     }
     
 # Cálculo de piezas posibles según calorías disponibles
-    if calorias_disponibles > 0:
+if calorias_disponibles > 0:
         calorias_por_pieza = calorias_sushi[tipo_sushi]
         piezas_posibles = calorias_disponibles // calorias_por_pieza # División entera
 
@@ -76,12 +76,12 @@ elif menu == "Calculadora":
 
         # Recomendaciones según el número de piezas posibles
         st.markdown("### Recomendaciones:")
-        if piezas_posibles > 15:
-            st.warning("Estás comiendo bastante sushi ¡Considera acompañar con ensalada o té verde!")
-        elif piezas_posibles < 5:
-            st.info("Podrías disfrutar algunas piezas más sin preocuparte demasiado ")
-        else:
-            st.success("Cantidad equilibrada. ¡Buen provecho! ")
+if piezas_posibles > 15:
+        st.warning("Estás comiendo bastante sushi ¡Considera acompañar con ensalada o té verde!")
+elif piezas_posibles < 5:
+        st.info("Podrías disfrutar algunas piezas más sin preocuparte demasiado ")
+else:
+        st.success("Cantidad equilibrada. ¡Buen provecho! ")
 
 # SECCIÓN 3: CONTACTO
 elif menu == "Contacto":
@@ -101,4 +101,5 @@ elif menu == "Contacto":
     # Imagen y video adicional
     st.image("sushi imagen 2.jpg")
     st.video("https://www.youtube.com/watch?v=NTFjleENYEo")    
+
 
