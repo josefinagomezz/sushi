@@ -66,7 +66,7 @@ elif menu == "Calculadora":
     }
     
 # Cálculo de piezas posibles según calorías disponibles
- if calorias_disponibles > 0:
+    if calorias_disponibles > 0:
         calorias_por_pieza = calorias_sushi[tipo_sushi]
         piezas_posibles = calorias_disponibles // calorias_por_pieza
 
@@ -98,6 +98,7 @@ elif menu == "Contacto":
     # Imagen y video adicional
     st.image("sushi imagen 2.jpg")
     st.video("https://www.youtube.com/watch?v=NTFjleENYEo")    
+
 
 
 
