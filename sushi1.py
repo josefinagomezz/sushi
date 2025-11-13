@@ -76,7 +76,7 @@ elif menu == "Calculadora":
         st.markdown("### Recomendaciones:")
     if piezas_posibles < 15:
         st.warning("Estás comiendo bastante sushi ¡Considera acompañar con ensalada o té verde!")
-    elif piezas_posibles < 5:
+    elif piezas_posibles > 5:
         st.info("Podrías disfrutar algunas piezas más sin preocuparte demasiado ")
     else:
         st.success("Cantidad equilibrada. ¡Buen provecho! ")
@@ -98,6 +98,7 @@ elif menu == "Contacto":
     # Imagen y video adicional
     st.image("sushi imagen 2.jpg")
     st.video("https://www.youtube.com/watch?v=NTFjleENYEo")    
+
 
 
 
